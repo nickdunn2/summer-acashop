@@ -1,0 +1,44 @@
+aca_shop_home:
+    path:     /
+    defaults: { _controller: AcaShopBundle:Home:index }
+
+# This will get hit when the user types in a username and password, then hits submit
+aca_shop_login:
+    path:     /login_user
+    defaults: { _controller: AcaShopBundle:Home:login }
+
+aca_shop_logout:
+    path:     /logout
+    defaults: { _controller: AcaShopBundle:Home:logout }
+
+aca_shop_products:
+    path:     /products
+    defaults: { _controller: AcaShopBundle:Product:show }
+
+aca_shop_add_cart:
+    path:     /add_cart
+    defaults: { _controller: AcaShopBundle:Cart:add }
+
+aca_shop_display_cart:
+    path:     /cart
+    defaults: { _controller: AcaShopBundle:Cart:show }
+
+aca_shop_delete_cart_item:
+    path:     /delete_cart_item
+    defaults: { _controller: AcaShopBundle:Cart:delete }
+
+aca_shop_update_cart_item:
+    path:     /update_cart_item
+    defaults: { _controller: AcaShopBundle:Cart:update }
+
+aca_shipping_address:
+    path:     /shipping_address
+    defaults: { _controller: AcaShopBundle:Cart:shippingAddress }
+
+aca_place_order:
+    path:     /place_order
+    defaults: { _controller: AcaShopBundle:Order:place }
+
+aca_receipt:
+    path:     /receipt
+    defaults: { _controller: AcaShopBundle:Receipt:show }
